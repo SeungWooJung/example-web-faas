@@ -1,0 +1,402 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(url(back_2.jpg));
+    background-size: cover;
+    background-position: auto;
+    font-family: Futura LT W02 Medium,sans-serif;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #f2f2f2;
+}
+
+div {
+    display: block;
+}
+
+/* .Main_Pannel {
+    width: 1700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+} */
+
+.Top_Pannel {
+    left: 0;
+    padding: 15px 45px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: background-color 1s;
+}
+
+.Top_Pannel_darken {
+    background-color:rgba(0,0,0,.3)
+}
+
+.Home {
+    background-image: url(images/FaaS_Main.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 130px;
+    height: 45px;
+}
+
+.Menu_Pannel {
+    line-height: 26px;
+    font-size: 15px;
+    margin: auto;
+    max-width: 650px;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.Menu_Button {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-size: 17;
+}
+
+.Cover_Pannel {
+    background-color: #7f7962;
+    background-image: url(images/Cover_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 600px;
+    font-family: Futura LT W02 Bold,sans-serif;
+    font-size: 75px;
+    text-align: center;
+    padding-top: 180px;
+    position: relative;
+    width: 100%;
+    line-height: 96px;
+    color: #f2f2f2;
+    transition: all .1s;
+}
+
+.FaaS_Pannel {
+    width: 100%;
+    height: 1000px;
+    background-color: #000000;
+    background-image: url(images/FaaS_Desc.jpg);
+    background-size: 2000px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.FaaS_Intro {
+    text-align: center;
+    color: #303f3f;
+    padding-top: 69px;
+    letter-spacing: .4px;
+    font-size: 18px;
+}
+
+.FaaS_Title {
+    font-family: Futura LT W02 Medium,sans-serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+.FaaS_Content {
+    font-family: Futura LT W02 Medium,sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.Team_Pannel {
+    background-color: #2d4243;
+    position: relative;
+}
+
+.Member_Wrapper {
+    max-width: 850px;
+    width: 100%;
+    color: #fff;
+    background-color: #405455;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.Member_row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Member_Profile_Column{
+    margin-right: 90px;
+    -webkit-box-flex: 0;
+    flex: 1;
+    flex-basis: 250px;
+}
+
+/*http://flexboxfroggy.com/#ko / 스타일 참고 */
+
+.Member_Profile_Picture_1 {
+    padding-right: 40px;
+    background-image: url(images/Member_1.jpg);
+    background-size: 270px;
+    background-repeat: no-repeat;
+    background-position: 10px top;
+    margin-top: -20px;
+    padding-top: 20px;
+    width: 300px;
+    height: 350px;
+}
+
+.Member_Profile_Picture_2 {
+    padding-right: 40px;
+    background-image: url(images/Member_2.jpg);
+    background-size: 270px;
+    background-repeat: no-repeat;
+    background-position: 10px top;
+    margin-top: -20px;
+    padding-top: 20px;
+    width: 300px;
+    height: 350px;
+}
+
+.Member_Text_Column {
+    -webkit-box-flex: 1;
+    flex: 2;
+    width: 250px;
+}
+
+.Member_Name {
+    font-family: Futura LT W02 Bold,sans-serif;;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.Member_Desc {
+    font-family: Futura LT W02 Medium,sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.Contact_Pannel {
+    background-color: #2d4243;
+    position: relative;
+}
+
+.Contact_Wrapper {
+    max-width: 850px;
+    width: 100%;
+    color: #fff;
+    background-color: #405455;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.Contact_Row {
+    display: flex;
+    justify-content: center;
+}
+
+.Contact_Title {
+    font-family: Futura LT W02 Bold,sans-serif;
+    font-size: 60px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.Contact_Image_Column {
+    margin-right: 90px;
+    -webkit-box-flex: 0;
+    flex: none;
+    flex-basis: 250px;
+}
+
+.Contact_Icons_1 {
+    background-image: url(images/-.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    max-width: 50px;
+    float: right;
+}
+
+.Contact_Icons_2 {
+    background-image: url(images/gmail.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    max-width: 50px;
+}
+
+.Contact_Desc_Column {
+    flex: 1;
+    -webkit-box-flex: 1;
+    padding: 20px;
+    position: relative;
+    max-width: 350px;
+}
+
+.Contact_Desc {
+    font-family: Futura LT W02 Medium,sans-serif;
+    font-size: 35px;
+}
+
+.FAQ {
+    background-color: #2d4243;
+    color: #f2f2f2;
+    padding-top: 55px;
+    width: 100%;
+    padding-bottom: 55px;
+    position: relative;
+}
+
+.FAQ_Wrapper {
+    margin: auto;
+    max-width: 810px;
+}
+
+.FAQ_Title {
+    font-family: Futura LT W02 Bold,sans-serif;
+    font-size: 19px;
+    margin-bottom: 26px;
+}
+
+.FAQ_List {
+    color: #686864;
+}
+
+.FAQ_List_Item {
+    border-top: 1px solid #43423e;
+    font-size: 13px;
+    letter-spacing: .3px;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 50px;
+}
+
+.FAQ_List_Item.active {
+    color: #f2f2f2;
+}
+
+.FAQ_List_Item:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 11px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.FAQ_List_Item_Detail {
+    display: none;
+    line-height: 22px;
+    margin-top: 3px;
+    letter-spacing: .4px;
+    cursor: auto;
+}
+
+.FAQ_List_Item_Detail.active {
+    display: block;
+    margin-bottom: 16px;
+    color: #bdbdbd;
+}
+
+.FAQ_List_Item:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 1px;
+    height: 11px;
+    background-color: #fff;
+    transition: all .2s;
+}
+
+.footer {
+    font-family: Futura LT W02 Light;
+    background-color: #fff;
+    background-image: url(images/footer.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 222px;
+    width: 100%;
+    padding-top: 65px;
+    color: #dddddc;
+}
+
+.footer_wrapper {
+    margin: auto;
+    max-width: 810px;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col_md_4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col_md_8 {
+    flex: 0 0 66.666666%;
+    max-width: 66.666666%;
+}
+
+.footer_menu {
+    padding-right: 66px;
+    padding-left: 0;
+}
+
+.footer_menu_item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #a0a0a0;
+}
+
+.footer_menu_item_space{
+    margin-left: 19px
+}
+
+.footer_menu_item:after {
+    content: "|";
+}
+
+.footer_logo {
+    background-image: url(images/FaaS_Main.png);
+    background-size: 73px;
+    background-repeat: no-repeat;
+    opacity: .8;
+    width: 100px;
+    height: 30px;
+    display: block;
+}
+
+.d-line{
+    display: inline!important;
+}
